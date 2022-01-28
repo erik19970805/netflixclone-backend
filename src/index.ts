@@ -1,11 +1,14 @@
-import { config } from 'dotenv';
+/* eslint-disable import/first */
+/* eslint-disable import/order */
 import https, { ServerOptions } from 'https';
-import fs from 'fs';
+import { config } from 'dotenv';
 import path from 'path';
+import fs from 'fs';
 
 config();
 
 import app from './app';
+import './database';
 
 function main() {
   const pathCert = path.resolve(__dirname, '../cert/');
