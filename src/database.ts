@@ -1,5 +1,6 @@
+/* eslint-disable no-console */
 import { connect, connection } from 'mongoose';
-import { mongodbUrl } from './config/env';
+import { mongodbUrl } from '@src/config/env';
 
 connect(mongodbUrl);
 

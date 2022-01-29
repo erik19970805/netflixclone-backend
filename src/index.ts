@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable import/first */
 /* eslint-disable import/order */
 import https, { ServerOptions } from 'https';
@@ -7,8 +8,8 @@ import fs from 'fs';
 
 config();
 
-import app from './app';
-import './database';
+import app from '@src/app';
+import '@src/database';
 
 function main() {
   const pathCert = path.resolve(__dirname, '../cert/');
