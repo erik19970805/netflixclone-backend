@@ -11,7 +11,9 @@
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint"],
-  "rules": {},
+  "rules": {
+    "no-underscore-dangle": "off"
+  },
   "settings": {
     "import/resolver": {
       "typescript": {
