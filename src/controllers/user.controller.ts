@@ -1,7 +1,6 @@
 import { IUser } from '@src/interfaces/IUser';
 import User from '@src/models/User';
 import { Request, Response } from 'express';
-import { Aggregate, PipelineStage } from 'mongoose';
 
 export const getUser = async (req: Request, res: Response) => {
   try {
